@@ -12,16 +12,19 @@ function App() {
   return (
     <div className="App">
       <Row>
-        <Col span={12}>
+        <Col span={7}>
           <CardProducts />
         </Col>
-        <Col span={12}>
+        <Col span={9}>
+          <CardProducts />
+        </Col>
+        <Col span={8}>
           <CardProducts />
         </Col>
       </Row>
 
       {/* desktop */}
-      <div className="d-none d-lg-block d-md-none d-sm-none">
+      <div className="d-none d-lg-block">
         desktop version
       </div>
 
