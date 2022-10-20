@@ -6,6 +6,7 @@ import CardProducts from './components/CardProducts';
 import './App.css';
 import './display.less';
 import 'antd/dist/antd.css';
+import './bootstrap/css/bootstrap.css';
 
 function App() {
   return (
@@ -18,6 +19,16 @@ function App() {
           <CardProducts />
         </Col>
       </Row>
+
+      {/* desktop */}
+      <div className="d-none d-lg-block d-md-none d-sm-none">
+        desktop version
+      </div>
+
+      {/* mobile */}
+      <div className="d-sm-block d-md-none d-lg-none">
+        mobile version
+      </div>
     </div>
   );
 }
